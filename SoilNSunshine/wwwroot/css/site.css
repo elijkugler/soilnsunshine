@@ -23,7 +23,39 @@ a {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+/* Navigation Bar Logo Movement
+---------------------------------------------------*/
+.col{
+    margin:auto;
+}
+.navSpace{
+    justify-content: space-between;
+}
+.imageCenter{
+    display: table;
+    margin: auto;
+}
+/* Large Header Photo
+---------------------------------------------------*/
+.parallax {
+  background-image: url('/images/cow_looking.jpg');
+  /* Set a specific height */
+  min-height: 700px;
 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-position: 15%;
+}
+.headerphoto img{
+  width: 100%;
+  background-attachment:fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -60,7 +92,8 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 150px;
+  padding: 0 0 0 0;
 }
 .footer {
   position: absolute;
