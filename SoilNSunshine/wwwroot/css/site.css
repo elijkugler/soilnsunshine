@@ -40,8 +40,8 @@ a {
 .parallax {
   background-image: url('/images/cow_looking.jpg');
   /* Set a specific height */
-  min-height: 700px;
-
+  min-height: 800px;
+  width: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -63,7 +63,7 @@ html {
 }
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 32px;
   }
 }
 
@@ -92,8 +92,7 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 150px;
-  padding: 0 0 0 0;
+  margin-bottom: 150px !important;
 }
 .footer {
   position: absolute;

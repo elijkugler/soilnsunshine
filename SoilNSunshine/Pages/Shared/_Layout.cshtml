@@ -5,39 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SoilNSunshine</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/w3.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+
 </head>
 <body>
     <header>
-        <nav class="navSpace">
+        <nav class="navSpace border-bottom">
               <div class="row w-100">
                 <div class="col">
                     <ul class="nav p-lg-5">
                         <li class="nav-item font-weight-bold">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Practices">Practices</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item font-weight-bold">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">About</a>
-                        </li>
-                        <li class="nav-item font-weight-bold align-middle">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Shop">Shop</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Practices">The Farm</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col">
-                      <a class="imageCenter" asp-area="" asp-page="/Index">
-                            <img src="images/soilnsunshine_svg.png" alt="Soil N Sunshine" style="width:120px;"> 
-                      </a>
+                  <div class="imageCenter"><h1>Soil 'N Sunshine</h1></div>
                 </div>
                 <div class="col">
-                  <div class="imageCenter display-4"><p>Soil 'N Sunshine</p></div>
+                      <a class="imageCenter" asp-area="" asp-page="/Index">
+                            <img src="images/soilnsunshine_svg.png" alt="Soil N Sunshine" style="width:100px;"> 
+                      </a>
                 </div>
               </div>
         </nav>
     </header>
-    <div class="parallax"></div>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main class="pb-3">
             @RenderBody()
         </main>
     </div>
